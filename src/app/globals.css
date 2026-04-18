@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand tokens */
+  --color-midnight: #0F0D0A;
+  --color-midnight-2: #15120E;
+  --color-midnight-3: #1C1813;
+  --color-amber: #C4852A;
+  --color-amber-2: #E0A045;
+  --color-amber-3: #F0C070;
+  --color-bone: #F5EFE6;
+  --color-bone-2: #E8DFD0;
+  --color-fog: #A89F92;
+  --color-teak: #8C5A2B;
+  --color-cypress: #C9A97A;
+
+  /* Typography */
+  --font-display: "Canela Deck", "Playfair Display", ui-serif, Georgia, serif;
+  --font-serif: "Source Serif 4", ui-serif, Georgia, serif;
+  --font-sans: "Inter", "Söhne", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Easing + motion */
+  --ease-cinema: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background: var(--color-midnight);
+    color: var(--color-bone);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--color-midnight);
+    color: var(--color-bone);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  ::selection {
+    background: var(--color-amber);
+    color: var(--color-midnight);
+  }
+
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--color-midnight); }
+  ::-webkit-scrollbar-thumb { background: #2a241c; border-radius: 10px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-amber); }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+
+  .font-display { font-family: var(--font-display); }
+  .font-serif   { font-family: var(--font-serif); }
+  .font-sans    { font-family: var(--font-sans); }
+  .font-mono    { font-family: var(--font-mono); }
+}
+
+@layer utilities {
+  .container-x {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1320px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .container-x {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--color-amber);
+  }
+
+  .rule {
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(196, 133, 42, 0.6) 20%,
+      rgba(196, 133, 42, 0.6) 80%,
+      transparent 100%);
+    height: 1px;
+  }
+
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+
+  .gradient-radial-amber {
+    background: radial-gradient(ellipse at 50% 40%,
+      rgba(196, 133, 42, 0.25) 0%,
+      rgba(196, 133, 42, 0.08) 35%,
+      rgba(15, 13, 10, 0) 65%);
+  }
+
+  .gradient-midnight-fade {
+    background: linear-gradient(180deg,
+      rgba(15, 13, 10, 0) 0%,
+      rgba(15, 13, 10, 0.4) 40%,
+      rgba(15, 13, 10, 0.95) 85%,
+      var(--color-midnight) 100%);
+  }
+
+  .grain::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.77  0 0 0 0 0.52  0 0 0 0 0.17  0 0 0 0.12 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    opacity: 0.35;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+
+  .divider-amber {
+    background: linear-gradient(90deg,
+      transparent, rgba(196, 133, 42, 0.8), transparent);
+    height: 1px;
+    width: 100%;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.9rem 1.5rem;
+    background: var(--color-amber);
+    color: var(--color-midnight);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border: 1px solid var(--color-amber);
+    transition: all 350ms var(--ease-cinema);
+  }
+  .btn-primary:hover {
+    background: var(--color-amber-2);
+    border-color: var(--color-amber-2);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 30px -10px rgba(224, 160, 69, 0.45);
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.9rem 1.5rem;
+    background: transparent;
+    color: var(--color-bone);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border: 1px solid rgba(245, 239, 230, 0.25);
+    transition: all 350ms var(--ease-cinema);
+  }
+  .btn-ghost:hover {
+    border-color: var(--color-amber);
+    color: var(--color-amber);
+  }
+
+  .card {
+    position: relative;
+    background: linear-gradient(180deg, rgba(28, 24, 19, 0.6) 0%, rgba(21, 18, 14, 0.6) 100%);
+    border: 1px solid rgba(245, 239, 230, 0.08);
+    backdrop-filter: blur(6px);
+    transition: border-color 350ms var(--ease-cinema),
+                transform 350ms var(--ease-cinema),
+                background-color 350ms var(--ease-cinema);
+  }
+  .card:hover {
+    border-color: rgba(196, 133, 42, 0.45);
+    background: linear-gradient(180deg, rgba(30, 26, 20, 0.7) 0%, rgba(22, 19, 15, 0.7) 100%);
+  }
+
+  .link-amber {
+    color: var(--color-amber);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(196, 133, 42, 0.4);
+    transition: all 250ms var(--ease-cinema);
+  }
+  .link-amber:hover {
+    color: var(--color-amber-2);
+    border-bottom-color: var(--color-amber-2);
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .marquee-track {
+    animation: marquee 40s linear infinite;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up {
+    animation: fadeUp 900ms var(--ease-cinema) both;
+  }
+
+  @keyframes ember {
+    0%, 100% { opacity: 0.55; transform: translateY(0); }
+    50% { opacity: 0.95; transform: translateY(-8px); }
+  }
+  .ember {
+    animation: ember 4.5s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-up, .ember, .marquee-track {
+      animation: none !important;
+    }
+    html { scroll-behavior: auto; }
+  }
+}
