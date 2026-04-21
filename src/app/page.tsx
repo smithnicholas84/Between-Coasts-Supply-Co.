@@ -10,34 +10,35 @@ import { PRODUCTS } from "@/data/products";
 
 const phase1Apps = APPLICATIONS.filter((a) => a.phase === 1);
 
+// Contractor-first pillar order. Sustainability is #04 — credibility, not headline.
 const PILLARS = [
   {
     n: "01",
-    title: "Sustainably sourced. Quietly.",
-    body: "Every board originates with responsible plantation growers in Costa Rica — members of the Costa Rican Forestry Chamber, not clear-cut tropical. FSC track, CITES-compliant, phyto-certified at origin.",
+    title: "Built for the trade. Not the retail aisle.",
+    body: "We sell to contractors, fence installers, landscapers, millwork shops, and architects. Wholesale pricing. Net-30 for qualified accounts. If you're pulling more than a pallet, you're our customer.",
   },
   {
     n: "02",
-    title: "Landed, not airdropped.",
-    body: "We ship full 40-foot containers — roughly 20,000 board feet each — through Houston and into a Des Moines-area yard. You pick up or we deliver. No freight surprises.",
+    title: "One lane. Container-to-yard in five weeks.",
+    body: "40-foot containers — roughly 20,000 board feet each — move from Costa Rica through Houston to our Des Moines-area staging yard. Pickup or regional delivery across seven states. No freight surprises.",
   },
   {
     n: "03",
-    title: "CAFTA-DR · 0% duty.",
-    body: "Costa Rica teak and cypress enter under CAFTA-DR at zero import duty (HTS 4407). That savings is baked into the landed price — not captured by the importer.",
+    title: "CAFTA-DR · 0% import duty.",
+    body: "Costa Rica teak and cypress enter under CAFTA-DR at zero tariff (HTS 4407). That savings is in the landed price — not captured by us. It's how we move premium material at contractor-viable pricing.",
   },
   {
     n: "04",
-    title: "Built for the trade, not the retail shopper.",
-    body: "We sell to contractors, landscapers, millwork shops, and architects. Wholesale pricing. Net-30 for qualified accounts. Container-volume math.",
+    title: "Responsibly sourced. Documented.",
+    body: "Every board comes from plantation growers — members of the Costa Rican Forestry Chamber, not clear-cut tropical. FSC-track, CITES-compliant, phyto-certified at origin. The paperwork is clean.",
   },
 ];
 
 const STATS = [
   { k: "20,000", v: "Board feet per 40' container" },
   { k: "0%", v: "Import duty under CAFTA-DR" },
-  { k: "~$5.73", v: "Landed cost per BF · teak" },
-  { k: "~$3.22", v: "Landed cost per BF · cypress" },
+  { k: "~$9.50", v: "Teak · wholesale per BF" },
+  { k: "~$4.75", v: "Cypress · wholesale per BF" },
 ];
 
 const MARQUEE = [
@@ -45,7 +46,7 @@ const MARQUEE = [
   "Kiln-dried teak — $9.50 / BF wholesale",
   "Kiln-dried cypress — $4.75 / BF wholesale",
   "40' containers · 20,000 BF per load",
-  "FSC-track · CITES-compliant · Phyto-certified",
+  "Outlasts cedar by decades — no treatment required",
   "Built between the coasts. Built to last.",
 ];
 
@@ -61,21 +62,21 @@ export default function Home() {
         eyebrow="What we are"
         title={
           <>
-            A direct import desk for
+            A direct import desk for contractors who need
             {" "}
             <span className="italic text-[var(--color-amber)]">
-              builders who don&rsquo;t want to buy from big-box.
+              material that outperforms what the big-box stocks.
             </span>
           </>
         }
         intro={
           <>
-            Between Coasts Supply Co. is a wholesale hardwood import business
-            based in Indianola, Iowa. We bring premium kiln-dried teak and
-            cypress up from responsible plantation growers in Costa Rica,
-            clear them through Houston, and stage them in a Des Moines-area
-            yard for pickup or delivery across seven Midwest and Rocky Mountain
-            states.
+            Between Coasts Supply Co. is a wholesale hardwood importer based
+            in Indianola, Iowa. We bring kiln-dried teak and cypress from
+            plantation growers in Costa Rica, land them through Houston,
+            and stage them in a Des Moines-area yard for pickup or delivery
+            across the Midwest and Rocky Mountain region.
+            Teak at $9.50/BF. Cypress at $4.75/BF. No retail markup.
           </>
         }
       >
@@ -107,11 +108,13 @@ export default function Home() {
         eyebrow="The material"
         title={
           <>
-            Two species. One import lane.{" "}
-            <span className="italic text-[var(--color-amber)]">Everything a Midwest job needs.</span>
+            Teak. Cypress.{" "}
+            <span className="italic text-[var(--color-amber)]">
+              Both outperform everything in the cedar aisle.
+            </span>
           </>
         }
-        intro="We run a 70/30 teak-to-cypress mix per container by default, adjusted to your order book. Teak handles the premium and marine work. Cypress moves the volume: fence line, pergola stock, siding, porch ceilings."
+        intro="Teak handles the premium and marine work — decks, gates, architectural cladding. Cypress runs the volume: fence line, pergola stock, siding, porch ceilings. Both arrive kiln-dried, both enter at 0% duty, both outlast cedar without treatment."
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {Object.values(PRODUCTS).map((p, i) => (
@@ -182,14 +185,14 @@ export default function Home() {
 
       {/* Applications spotlight */}
       <Section
-        eyebrow="Where it ships"
+        eyebrow="What it builds"
         title={
           <>
-            Fence. Deck. Pergola. Paneling.{" "}
-            <span className="italic text-[var(--color-amber)]">And twenty more.</span>
+            Fence. Deck. Pergola. Siding.{" "}
+            <span className="italic text-[var(--color-amber)]">Everything a Midwest job asks for.</span>
           </>
         }
-        intro="Phase 1 is built around eight exterior applications that move container volume fast. Interior millwork, hospitality, marine, and specialty follow in Phases 2 and 3."
+        intro="Phase 1 covers eight exterior applications — the ones that move container volume and close quickly. Interior millwork, hospitality, and specialty work follow in Phases 2 and 3."
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {phase1Apps.map((a, i) => (
@@ -244,14 +247,14 @@ export default function Home() {
 
       {/* Geography */}
       <Section
-        eyebrow="Where we ship"
+        eyebrow="Where we deliver"
         title={
           <>
             Seven states.{" "}
             <span className="italic text-[var(--color-amber)]">One lane.</span>
           </>
         }
-        intro="We run one container lane — Costa Rica to Houston to Iowa — and fan out by regional freight from there. Our radius covers Iowa, Nebraska, Kansas, Minnesota, Missouri, Wisconsin, and Colorado. If you're building between the coasts, you're inside our box."
+        intro="One container lane — Costa Rica to Houston to Iowa — then regional freight from there. We cover Iowa, Nebraska, Kansas, Minnesota, Missouri, Wisconsin, and Colorado. Pickup at the Des Moines-area yard or we'll quote delivery to your job site."
       >
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
           {["Iowa","Nebraska","Kansas","Minnesota","Missouri","Wisconsin","Colorado"].map((s, i) => (

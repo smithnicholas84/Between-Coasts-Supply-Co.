@@ -82,18 +82,18 @@ export default function ParallaxHero() {
       >
         <div className="max-w-4xl fade-up">
           <p className="eyebrow mb-6">
-            Teak · Cypress · Imported by the Container
+            Teak · Cypress · Wholesale · Midwest Direct
           </p>
           <h1 className="font-serif text-[clamp(2.5rem,7vw,6rem)] leading-[1.02] tracking-[-0.02em] text-balance">
-            Built between the
+            Premium hardwood.
             <br />
-            coasts. <span className="italic text-[var(--color-amber)]">Built to last.</span>
+            <span className="italic text-[var(--color-amber)]">Priced for the job site.</span>
           </h1>
           <p className="mt-8 text-lg md:text-xl text-[var(--color-bone-2)] max-w-2xl text-pretty leading-relaxed">
-            Premium kiln-dried teak and cypress, sourced from responsible
-            plantation growers in Costa Rica. Delivered by the 40-foot
-            container to the builders, landscapers, and contractors who shape
-            the American middle.
+            Kiln-dried plantation teak and cypress, imported by the 40-foot
+            container from Costa Rica and landed in Iowa at 0% duty. Wholesale
+            pricing for fence installers, landscapers, and contractors across
+            the Midwest. No retail markup. No middle man.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link href="/contact" className="btn-primary">
