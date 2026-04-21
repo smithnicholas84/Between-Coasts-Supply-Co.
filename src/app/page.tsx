@@ -8,7 +8,7 @@ import CTA from "@/components/CTA";
 import { APPLICATIONS } from "@/data/applications";
 import { PRODUCTS } from "@/data/products";
 
-const phase1Apps = APPLICATIONS.filter((a) => a.phase === 1);
+const exteriorApps = APPLICATIONS.filter((a) => a.category === "Exterior");
 
 // Contractor-first pillar order. Sustainability is #04 — credibility, not headline.
 const PILLARS = [
@@ -19,8 +19,8 @@ const PILLARS = [
   },
   {
     n: "02",
-    title: "One lane. Container-to-yard in five weeks.",
-    body: "40-foot containers — roughly 20,000 board feet each — move from Costa Rica through Houston to our Des Moines-area staging yard. Pickup or regional delivery across seven states. No freight surprises.",
+    title: "Costa Rica to your job site. Typically in 3–5 weeks.",
+    body: "Lumber moves from our Costa Rica partner's kiln through Houston and into our Des Moines-area staging yard. Pickup or regional delivery across seven states. No freight surprises.",
   },
   {
     n: "03",
@@ -35,8 +35,8 @@ const PILLARS = [
 ];
 
 const STATS = [
-  { k: "20,000", v: "Board feet per 40' container" },
   { k: "0%", v: "Import duty under CAFTA-DR" },
+  { k: "3–5 wk", v: "Costa Rica to Iowa yard" },
   { k: "~$9.50", v: "Teak · wholesale per BF" },
   { k: "~$4.75", v: "Cypress · wholesale per BF" },
 ];
@@ -45,8 +45,8 @@ const MARQUEE = [
   "Iowa · Nebraska · Kansas · Minnesota · Missouri · Wisconsin · Colorado",
   "Kiln-dried teak — $9.50 / BF wholesale",
   "Kiln-dried cypress — $4.75 / BF wholesale",
-  "40' containers · 20,000 BF per load",
   "Outlasts cedar by decades — no treatment required",
+  "FSC-track · CITES-compliant · CAFTA-DR 0% duty",
   "Built between the coasts. Built to last.",
 ];
 
@@ -192,17 +192,17 @@ export default function Home() {
             <span className="italic text-[var(--color-amber)]">Everything a Midwest job asks for.</span>
           </>
         }
-        intro="Phase 1 covers eight exterior applications — the ones that move container volume and close quickly. Interior millwork, hospitality, and specialty work follow in Phases 2 and 3."
+        intro="Eight exterior applications that close fast. Interior millwork, hospitality, and specialty work also available — ask the trade desk."
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
-          {phase1Apps.map((a, i) => (
+          {exteriorApps.map((a, i) => (
             <Reveal key={a.slug} delay={i * 0.05}>
               <Link
                 href={`/applications#${a.slug}`}
                 className="card block p-6 h-full group"
               >
                 <span className="font-mono text-[10px] tracking-[0.24em] uppercase text-[var(--color-amber)]">
-                  {a.category} · Phase {a.phase}
+                  {a.category}
                 </span>
                 <h4 className="mt-3 font-serif text-xl leading-snug">
                   {a.name}
@@ -254,7 +254,7 @@ export default function Home() {
             <span className="italic text-[var(--color-amber)]">One lane.</span>
           </>
         }
-        intro="One container lane — Costa Rica to Houston to Iowa — then regional freight from there. We cover Iowa, Nebraska, Kansas, Minnesota, Missouri, Wisconsin, and Colorado. Pickup at the Des Moines-area yard or we'll quote delivery to your job site."
+        intro="Direct from Costa Rica through Houston to our Iowa yard, then regional freight from there. We cover Iowa, Nebraska, Kansas, Minnesota, Missouri, Wisconsin, and Colorado. Pickup at the Des Moines-area yard or we'll quote delivery to your job site."
       >
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
           {["Iowa","Nebraska","Kansas","Minnesota","Missouri","Wisconsin","Colorado"].map((s, i) => (

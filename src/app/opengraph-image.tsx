@@ -37,14 +37,14 @@ export default async function OG() {
             <span style={{ color: "#C4852A", fontStyle: "italic" }}>Built to last.</span>
           </div>
           <div style={{ fontSize: 26, lineHeight: 1.35, maxWidth: 900, color: "#E8DFD0" }}>
-            Kiln-dried teak and cypress, imported by the container from responsible
-            plantation growers in Costa Rica. Wholesale to Midwest builders.
+            Kiln-dried teak and cypress, direct from responsible plantation growers
+            in Costa Rica. Wholesale to Midwest builders.
           </div>
         </div>
 
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 16, color: "#A89F92", letterSpacing: 3, textTransform: "uppercase" }}>
           <div>Indianola, Iowa</div>
-          <div>CAFTA-DR · 0% duty · 40&apos; containers</div>
+          <div>CAFTA-DR · 0% duty · Direct import</div>
         </div>
       </div>
     ),

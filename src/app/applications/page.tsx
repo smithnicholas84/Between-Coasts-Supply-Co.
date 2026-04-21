@@ -7,7 +7,7 @@ import { APPLICATIONS, CATEGORIES } from "@/data/applications";
 export const metadata: Metadata = {
   title: "Applications — Full Spectrum",
   description:
-    "Every application we ship into: exterior fencing, decking, cladding, pergolas, hospitality cladding, marine trim, millwork, and specialty components. Phase 1, 2, and 3 roadmap.",
+    "Every application we supply: exterior fencing, decking, cladding, pergolas, hospitality cladding, marine trim, millwork, and specialty components.",
 };
 
 export default function ApplicationsPage() {
@@ -22,9 +22,8 @@ export default function ApplicationsPage() {
             <span className="italic text-[var(--color-amber)]">project better.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-[var(--color-bone-2)] max-w-3xl text-pretty leading-relaxed">
-            {APPLICATIONS.length} applications, organized by vertical and phase.
-            Phase 1 is the container lane we&rsquo;re starting with. Phase 2 opens
-            interior millwork and hospitality. Phase 3 is specialty and marine.
+            {APPLICATIONS.length} applications, organized by vertical — exterior,
+            interior, commercial, and specialty. All available on request.
           </p>
           <div className="divider-amber mt-14" />
         </div>
@@ -62,9 +61,6 @@ export default function ApplicationsPage() {
                   <Reveal key={a.slug} delay={i * 0.04}>
                     <article id={a.slug} className="card p-7 h-full scroll-mt-24">
                       <div className="flex items-center justify-between mb-4">
-                        <span className="font-mono text-[10px] tracking-[0.24em] uppercase text-[var(--color-amber)]">
-                          Phase {a.phase}
-                        </span>
                         <div className="flex gap-2">
                           {a.species.map((s) => (
                             <span

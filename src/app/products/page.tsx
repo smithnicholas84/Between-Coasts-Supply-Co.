@@ -9,7 +9,7 @@ import { PRODUCTS } from "@/data/products";
 export const metadata: Metadata = {
   title: "Products — Teak & Cypress",
   description:
-    "Kiln-dried plantation teak and Central American cypress, imported by the 40-foot container. Wholesale pricing, raw and fabricated profiles.",
+    "Kiln-dried plantation teak and Central American cypress, direct from Costa Rica. Wholesale pricing, raw and fabricated profiles.",
 };
 
 export default function ProductsPage() {
@@ -23,7 +23,7 @@ export default function ProductsPage() {
             <span className="italic text-[var(--color-amber)]">Every application the Midwest asks for.</span>
           </>
         }
-        intro="Phase 1 is raw planks — kiln-dried, surfaced to order, and priced for the trade. Fabricated profiles (T&G, shiplap, decking patterns) are available on request."
+        intro="Raw planks, kiln-dried, surfaced to order, and priced for the trade. Fabricated profiles — T&G, shiplap, decking patterns — available on request."
       />
 
       <Section>

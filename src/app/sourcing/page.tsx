@@ -44,7 +44,7 @@ export default function SourcingPage() {
             for more than two decades. They run multiple plantation locations
             plus harvest rights on adjacent responsibly-managed properties.
             <br /><br />
-            Every container we import moves through their vertically-integrated
+            Every shipment we import moves through their vertically-integrated
             operation: log → cant → kiln. That means our board feet arrive
             with a documented chain of custody from a single, traceable origin
             — not the anonymous hardwood market.
@@ -52,7 +52,7 @@ export default function SourcingPage() {
         }
       />
 
-      <Section tone="deep" eyebrow="Documentation" title="What ships with every container.">
+      <Section tone="deep" eyebrow="Documentation" title="What ships with every order.">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
             {
@@ -97,7 +97,7 @@ export default function SourcingPage() {
           {[
             { t: "Harvest & mill · Costa Rica", b: "Plantation logs → cants → kiln-dried planks at our partner&rsquo;s facility." },
             { t: "Pack & document · San José", b: "Banded bundles, phyto certificate, commercial invoice, CAFTA-DR certificate of origin." },
-            { t: "Ocean freight · Caldera / Limón → Houston", b: "8–12 day transit on major carriers. Roughly $4,200 per 40' container." },
+            { t: "Ocean freight · Caldera / Limón → Houston", b: "8–12 day ocean transit on major carriers. Direct from Costa Rica port to Houston." },
             { t: "Customs & clearance · Port of Houston", b: "Broker files entry under HTS 4407 at 0% duty. THC, inspection, phyto release." },
             { t: "Inland freight · Houston → Iowa", b: "Truck or rail-plus-drayage from Houston to our Des Moines-area staging yard." },
             { t: "Yard stage · Indianola, IA", b: "Unloaded, staged by species and grade. Available for pickup or regional delivery." },

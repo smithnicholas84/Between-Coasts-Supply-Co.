@@ -86,7 +86,7 @@ export default function ProductPage({ product }: { product: Product }) {
                 className="card p-6 block h-full group hover:border-[var(--color-amber)]/40"
               >
                 <span className="font-mono text-[10px] tracking-[0.24em] uppercase text-[var(--color-amber)]">
-                  {a.category} · Phase {a.phase}
+                  {a.category}
                 </span>
                 <h5 className="mt-3 font-serif text-lg leading-snug">{a.name}</h5>
                 <p className="mt-2 text-sm text-[var(--color-fog)]">{a.buyer}</p>
@@ -192,7 +192,7 @@ export default function ProductPage({ product }: { product: Product }) {
       </Section>
 
       {/* ─── SPECIFICATIONS — sizes & finishes ───────────────────────────── */}
-      <Section tone="deep" eyebrow="Specifications" title="What ships on the container.">
+      <Section tone="deep" eyebrow="Specifications" title="Dimensions &amp; Profiles.">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <div>
             <h4 className="font-mono text-[11px] tracking-[0.24em] uppercase text-[var(--color-amber)] mb-4">
@@ -226,7 +226,7 @@ export default function ProductPage({ product }: { product: Product }) {
             Custom sizing
           </p>
           <p className="text-[var(--color-bone-2)] text-sm leading-relaxed">
-            Mill-to-spec is available for orders of sufficient volume. Contact the trade desk with your profile requirements and we'll quote against the container manifest.
+            Mill-to-spec is available for orders of sufficient volume. Contact the trade desk with your profile requirements and we'll quote to order.
           </p>
         </div>
       </Section>

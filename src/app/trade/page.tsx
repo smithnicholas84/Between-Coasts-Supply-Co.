@@ -50,11 +50,11 @@ export default function TradePage() {
             },
             {
               tag: "Tier 03 — Partner",
-              label: "Container partner",
+              label: "Volume partner",
               vol: "10,000+ BF / yr",
               price: "Negotiated landed",
               terms: "Net-30 · reserved stock",
-              body: "You&rsquo;re moving container volume. We carve out reserved stock against your forecast and price at negotiated landed with transparent mark-up.",
+              body: "You&rsquo;re moving serious volume. We carve out reserved stock against your forecast and price at negotiated landed with transparent mark-up.",
             },
           ].map((t, i) => (
             <Reveal key={i} delay={i * 0.08}>

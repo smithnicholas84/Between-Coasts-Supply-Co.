@@ -46,7 +46,7 @@ export const PRODUCTS: Record<"teak" | "cypress", Product> = {
     name: "Plantation Teak",
     tagline: "The premium outdoor hardwood. Architect-specified. Contractor-proven.",
     blurb:
-      "Dense-grained, kiln-dried plantation teak with the natural oil content that makes it the standard for exterior hardwood worldwide. Straight grain, tight knots, consistent amber color. Outlasts cedar by decades. Imported direct by the 40-foot container at 0% duty.",
+      "Dense-grained, kiln-dried plantation teak with the natural oil content that makes it the standard for exterior hardwood worldwide. Straight grain, tight knots, consistent amber color. Outlasts cedar by decades. Imported direct from Costa Rica at 0% duty.",
     wholesaleBF: 9.5,
     fabricatedBF: 14.25,
     landedBF: 5.73,
@@ -178,7 +178,7 @@ export const PRODUCTS: Record<"teak" | "cypress", Product> = {
     name: "Central American Cypress",
     tagline: "The volume workhorse for fence, siding, and landscape. Straight, stable, built for weather.",
     blurb:
-      "Central American cypress delivers naturally decay-resistant heartwood with no pressure treatment required. Lighter than teak, faster to install, and priced for volume — the go-to species for fence contractors running high-board-count residential and commercial jobs. At roughly half the landed cost of teak, it's the workhorse that carries the container.",
+      "Central American cypress delivers naturally decay-resistant heartwood with no pressure treatment required. Lighter than teak, faster to install, and priced for volume — the go-to species for fence contractors running high-board-count residential and commercial jobs. At roughly half the cost of teak, it's the workhorse of the lineup.",
     wholesaleBF: 4.75,
     fabricatedBF: 7.75,
     landedBF: 3.22,

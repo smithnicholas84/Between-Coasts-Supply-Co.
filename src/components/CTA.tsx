@@ -15,7 +15,7 @@ export default function CTA({
   eyebrow = "Talk to the Trade Desk",
   title = (
     <>
-      Start a quote. <span className="italic text-[var(--color-amber)]">Move a container.</span>
+      Start a quote. <span className="italic text-[var(--color-amber)]">Get your material.</span>
     </>
   ),
   body = "Tell us your volume, your job, your timeline. We'll come back with landed pricing, lead times, and a delivery plan.",

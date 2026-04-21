@@ -90,10 +90,10 @@ export default function ParallaxHero() {
             <span className="italic text-[var(--color-amber)]">Priced for the job site.</span>
           </h1>
           <p className="mt-8 text-lg md:text-xl text-[var(--color-bone-2)] max-w-2xl text-pretty leading-relaxed">
-            Kiln-dried plantation teak and cypress, imported by the 40-foot
-            container from Costa Rica and landed in Iowa at 0% duty. Wholesale
-            pricing for fence installers, landscapers, and contractors across
-            the Midwest. No retail markup. No middle man.
+            Kiln-dried plantation teak and cypress, imported direct from Costa
+            Rica and landed in Iowa at 0% duty. Wholesale pricing for fence
+            installers, landscapers, and contractors across the Midwest.
+            No retail markup. No middle man.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link href="/contact" className="btn-primary">
@@ -107,7 +107,7 @@ export default function ParallaxHero() {
 
         <div className="absolute bottom-10 left-0 right-0 container-x flex items-end justify-between">
           <p className="font-mono text-[10px] tracking-[0.32em] uppercase text-[var(--color-fog)] hidden md:block">
-            40' containers · 20,000 BF / load · CAFTA-DR · 0% duty
+            Direct import · CAFTA-DR · 0% duty · Midwest delivery
           </p>
           <div className="flex items-center gap-3 text-[var(--color-fog)]">
             <div className="w-[1px] h-10 bg-gradient-to-b from-transparent via-[var(--color-amber)] to-transparent" />

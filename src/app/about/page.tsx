@@ -64,7 +64,7 @@ export default function AboutPage() {
             {
               n: "02",
               title: "Ship",
-              body: "40-foot containers move from Caldera or Limón to the Port of Houston by ocean freight, then inland by rail or truck to our Des Moines-area staging yard. Roughly 20,000 board feet per container.",
+              body: "Ocean freight from Caldera or Limón to the Port of Houston, then inland by rail or truck to our Des Moines-area staging yard. Typically 3–5 weeks from Costa Rica to Iowa.",
             },
             {
               n: "03",
@@ -123,7 +123,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {[
             { t: "Direct-to-trade.", b: "No retail storefront, no showroom. We sell to contractors, landscapers, architects, and millwork shops. The margin stays with the people cutting and installing." },
-            { t: "Container math, not shelf math.", b: "We price the way imports actually work — landed cost per board foot, rolled up to the container. No phantom surcharges, no change-of-currency markup." },
+            { t: "Transparent pricing.", b: "We price the way imports actually work — landed cost per board foot, clearly broken out. No phantom surcharges, no change-of-currency markup." },
             { t: "Responsibly sourced. Quietly.", b: "Plantation-grown, chamber-member supplier, phyto-certified, CITES-compliant. We don&rsquo;t brag about it — we just won&rsquo;t buy otherwise." },
             { t: "Built to last.", b: "The species we sell outlast every pressure-treated board in the aisle. The business we&rsquo;re building is supposed to outlast us, too." },
           ].map((v, i) => (

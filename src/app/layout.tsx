@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s · Between Coasts Supply Co.",
   },
   description:
-    "Kiln-dried teak and cypress, imported by the container from responsible plantation growers in Costa Rica. Sold wholesale to the builders, landscapers, and contractors who build the American middle.",
+    "Kiln-dried teak and cypress, imported direct from responsible plantation growers in Costa Rica. Sold wholesale to the builders, landscapers, and contractors who build the American middle.",
   keywords: [
     "teak wholesale", "cypress wholesale", "kiln-dried teak", "teak Iowa",
     "cypress Iowa", "teak decking Midwest", "cypress fencing", "tropical hardwood importer",
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
     url: SITE,
     title: "Between Coasts Supply Co.",
     description:
-      "Kiln-dried teak and cypress, imported by the container. Built between the coasts. Built to last.",
+      "Kiln-dried teak and cypress, direct from Costa Rica. Built between the coasts. Built to last.",
     siteName: "Between Coasts Supply Co.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Between Coasts Supply Co.",
-    description: "Premium teak and cypress, imported by the container.",
+    description: "Premium teak and cypress, direct from Costa Rica.",
   },
   robots: { index: true, follow: true },
 };

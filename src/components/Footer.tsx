@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="md:col-span-5">
             <Logo className="h-8 w-auto text-[var(--color-amber)]" />
             <p className="mt-6 text-[var(--color-fog)] max-w-sm text-pretty">
-              Kiln-dried teak and cypress, imported by the container.
+              Premium kiln-dried teak and cypress, imported direct from Costa Rica.
               Wholesale supply for builders, landscapers, and contractors from
               the Rockies to the Great Lakes.
             </p>
