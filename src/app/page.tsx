@@ -25,7 +25,7 @@ const PILLARS = [
   {
     n: "03",
     title: "CAFTA-DR · 0% import duty.",
-    body: "Costa Rica teak and cypress enter under CAFTA-DR at zero tariff (HTS 4407). That savings is in the landed price — not captured by us. It's how we move premium material at contractor-viable pricing.",
+    body: "Costa Rica teak and Central American Cypress enter under CAFTA-DR at zero tariff (HTS 4407). That savings is in the landed price — not captured by us. It's how we move premium material at contractor-viable pricing.",
   },
   {
     n: "04",
@@ -38,16 +38,16 @@ const STATS = [
   { k: "0%", v: "Import duty under CAFTA-DR" },
   { k: "3–5 wk", v: "Costa Rica to Iowa yard" },
   { k: "~$9.50", v: "Teak · wholesale per BF" },
-  { k: "~$4.75", v: "Cypress · wholesale per BF" },
+  { k: "~$4.75", v: "Central American Cypress · wholesale per BF" },
 ];
 
 const MARQUEE = [
-  "Iowa · Nebraska · Kansas · Minnesota · Missouri · Wisconsin · Colorado",
-  "Kiln-dried teak — $9.50 / BF wholesale",
-  "Kiln-dried cypress — $4.75 / BF wholesale",
-  "Outlasts cedar by decades — no treatment required",
-  "FSC-track · CITES-compliant · CAFTA-DR 0% duty",
-  "Built between the coasts. Built to last.",
+  "5/4 × 6 KD · FAS+ · CAFTA-DR 0% duty · HTS 4407",
+  "Plantation teak — $9.50 / BF wholesale · 50-year outdoor life",
+  "Central American Cypress — $4.75 / BF wholesale · zero chemical treatment",
+  "Des Moines staging yard · ships IA · NE · KS · MN · MO · WI · CO",
+  "1,155 lbf Janka teak · 900–1,100 lbf Cupressus lusitanica",
+  "3–5 weeks Costa Rica to yard · CITES-compliant · phyto-certified",
 ];
 
 export default function Home() {
@@ -71,12 +71,12 @@ export default function Home() {
         }
         intro={
           <>
-            Between Coasts Supply Co. is a wholesale hardwood importer based
-            in Indianola, Iowa. We bring kiln-dried teak and cypress from
+            Between Coasts Teak & Timber Co. is a wholesale hardwood importer based
+            in Waukee, Iowa. We bring kiln-dried teak and Central American Cypress from
             plantation growers in Costa Rica, land them through Houston,
             and stage them in a Des Moines-area yard for pickup or delivery
             across the Midwest and Rocky Mountain region.
-            Teak at $9.50/BF. Cypress at $4.75/BF. No retail markup.
+            Teak at $9.50/BF. Central American Cypress at $4.75/BF. No retail markup.
           </>
         }
       >
@@ -108,13 +108,13 @@ export default function Home() {
         eyebrow="The material"
         title={
           <>
-            Teak. Cypress.{" "}
+            Teak. Central American Cypress.{" "}
             <span className="italic text-[var(--color-amber)]">
               Both outperform everything in the cedar aisle.
             </span>
           </>
         }
-        intro="Teak handles the premium and marine work — decks, gates, architectural cladding. Cypress runs the volume: fence line, pergola stock, siding, porch ceilings. Both arrive kiln-dried, both enter at 0% duty, both outlast cedar without treatment."
+        intro="Teak handles the premium and marine work — decks, gates, architectural cladding. Central American Cypress runs the volume: fence line, pergola stock, siding, porch ceilings. Both arrive kiln-dried, both enter at 0% duty, both outlast cedar without treatment."
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {Object.values(PRODUCTS).map((p, i) => (
@@ -292,15 +292,15 @@ export default function Home() {
             },
             {
               label: "CYPRESSINE",
-              headline: "The reason a cypress closet doesn't need cedar.",
+              headline: "The reason a Central American Cypress closet doesn't need cedar.",
               body: "Cypressine and alpha-pinene are naturally occurring oils in Cupressus lusitanica that act as both a fungal preservative and a mild aromatic moth repellent. The scent lasts 5–10 years in a closed closet — no cedar required.",
               href: "/wood/cypress",
               cta: "Learn the science →",
             },
             {
               label: "ORIGIN",
-              headline: "The only country where teak and cypress grow together on certified sustainable plantations.",
-              body: "Costa Rica achieved net-zero deforestation and manages its highland plantations under SINAC oversight. Our teak is CITES-compliant. Our cypress is plantation-grown ciprés. Direct relationship — one grower, documented at origin.",
+              headline: "The only country where teak and Central American Cypress grow together on certified sustainable plantations.",
+              body: "Costa Rica achieved net-zero deforestation and manages its highland plantations under SINAC oversight. Our teak is CITES-compliant. Our Central American Cypress is plantation-grown ciprés. Direct relationship — one grower, documented at origin.",
               href: "/sourcing",
               cta: "How we source →",
             },

@@ -36,10 +36,10 @@ export default function Nav() {
       style={{ transitionTimingFunction: "var(--ease-cinema)" }}
     >
       <div className="container-x flex items-center justify-between h-16 md:h-20">
-        <Link href="/" aria-label="Between Coasts Supply Co." className="flex items-center gap-3 group">
+        <Link href="/" aria-label="Between Coasts Teak & Timber Co." className="flex items-center gap-3 group">
           <Logo className="h-7 w-auto text-[var(--color-amber)] group-hover:text-[var(--color-amber-2)] transition-colors" />
           <span className="hidden md:inline font-mono text-[10px] tracking-[0.22em] uppercase text-[var(--color-fog)] group-hover:text-[var(--color-bone)] transition-colors">
-            Between Coasts Supply Co.
+            Between Coasts Teak & Timber Co.
           </span>
         </Link>
 
@@ -53,8 +53,8 @@ export default function Nav() {
               {l.label}
             </Link>
           ))}
-          <Link href="/contact" className="btn-primary text-[11px]">
-            Request a Quote
+          <Link href="/trade" className="btn-primary text-[11px]">
+            Trade Accounts →
           </Link>
         </nav>
 
@@ -80,8 +80,8 @@ export default function Nav() {
                 {l.label}
               </Link>
             ))}
-            <Link href="/contact" onClick={() => setOpen(false)} className="btn-primary w-fit">
-              Request a Quote
+            <Link href="/trade" onClick={() => setOpen(false)} className="btn-primary w-fit">
+              Trade Accounts →
             </Link>
           </div>
         </div>

@@ -19,7 +19,7 @@ export const APPLICATIONS: Application[] = [
     species: ["Cypress", "Teak"],
     buyer: "Fence contractors · Landscape/design-build",
     pricing: "$4.75–$9.50 / BF raw",
-    pitch: "Cypress for volume. Teak for the premium tier. Tight horizontal lines, silver patina if left raw, amber glow if oiled.",
+    pitch: "Central American Cypress for volume. Teak for the premium tier. Tight horizontal lines, silver patina if left raw, amber glow if oiled.",
   },
   {
     slug: "privacy-screening-panels",
@@ -49,7 +49,7 @@ export const APPLICATIONS: Application[] = [
     species: ["Cypress", "Teak"],
     buyer: "Landscape/design-build · Custom builders",
     pricing: "$4.75–$9.50 / BF raw",
-    pitch: "Structural cypress for beams. Teak for the accent rafters. Built for the outdoor-living boom across the Midwest.",
+    pitch: "Structural Central American Cypress for beams. Teak for the accent rafters. Built for the outdoor-living boom across the Midwest.",
   },
   {
     slug: "gate-entry-panels",
@@ -69,7 +69,7 @@ export const APPLICATIONS: Application[] = [
     species: ["Cypress"],
     buyer: "Landscape/design-build · Garden centers",
     pricing: "$4.75 / BF raw",
-    pitch: "Cypress stands up to soil contact without treatment. Landscaper channel pulls these in volume.",
+    pitch: "Central American Cypress stands up to soil contact without treatment. Landscaper channel pulls these in volume.",
   },
   {
     slug: "siding-rainscreen",
@@ -89,7 +89,7 @@ export const APPLICATIONS: Application[] = [
     species: ["Cypress"],
     buyer: "Custom builders · Remodelers",
     pricing: "$4.75 / BF raw · T&G profile fabricated",
-    pitch: "T&G cypress ceilings on covered porches — the detail clients photograph.",
+    pitch: "T&G Central American Cypress ceilings on covered porches — the detail clients photograph.",
   },
 
   // INTERIOR — Phase 1–2
@@ -101,7 +101,7 @@ export const APPLICATIONS: Application[] = [
     species: ["Cypress", "Teak"],
     buyer: "Custom builders · Remodelers · Retail fabricators",
     pricing: "$4.75–$9.50 / BF raw",
-    pitch: "Cypress for volume residential shiplap. Teak for the statement wall in the primary suite or boutique.",
+    pitch: "Central American Cypress for volume residential shiplap. Teak for the statement wall in the primary suite or boutique.",
   },
   {
     slug: "ceilings-and-beams",
@@ -111,7 +111,7 @@ export const APPLICATIONS: Application[] = [
     species: ["Cypress", "Teak"],
     buyer: "Custom builders · Architects",
     pricing: "$7.75–$14.25 / BF fabricated",
-    pitch: "Profiled cypress tongue-and-groove ceilings. Teak box-beams. Requires a stateside mill partner for profiling.",
+    pitch: "Profiled Central American Cypress tongue-and-groove ceilings. Teak box-beams. Requires a stateside mill partner for profiling.",
   },
   {
     slug: "wainscoting-paneling",

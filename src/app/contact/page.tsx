@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Start a quote with Between Coasts Supply Co. Wholesale teak and cypress, delivered across the Midwest and Rocky Mountains.",
+    "Start a quote with Between Coasts Teak & Timber Co. Wholesale teak and Central American Cypress, delivered across the Midwest and Rocky Mountains.",
 };
 
 export default function ContactPage() {
@@ -41,7 +41,7 @@ export default function ContactPage() {
             />
             <ContactBlock
               eyebrow="Yard & Pickup"
-              title="Indianola, Iowa"
+              title="Waukee, Iowa"
               lines={[
                 { label: "Staging yard", value: "Des Moines-area · by appointment" },
                 { label: "Region", value: "IA · NE · KS · MN · MO · WI · CO" },

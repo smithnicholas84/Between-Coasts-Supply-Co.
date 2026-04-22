@@ -6,7 +6,7 @@ import CTA from "@/components/CTA";
 export const metadata: Metadata = {
   title: "Sourcing — Responsibly grown. Quietly sourced.",
   description:
-    "Between Coasts Supply Co. sources plantation-grown teak and cypress from responsible growers in Costa Rica. CITES-compliant, phyto-certified, CAFTA-DR 0% duty, FSC-track.",
+    "Between Coasts Teak & Timber Co. sources plantation-grown teak and Central American Cypress from responsible growers in Costa Rica. CITES-compliant, phyto-certified, CAFTA-DR 0% duty, FSC-track.",
 };
 
 export default function SourcingPage() {
@@ -61,11 +61,11 @@ export default function SourcingPage() {
             },
             {
               t: "CITES Compliance",
-              b: "Plantation teak and cypress are not CITES-listed species, and every shipment is documented and accompanied by origin paperwork to confirm plantation source.",
+              b: "Plantation teak and Central American Cypress are not CITES-listed species, and every shipment is documented and accompanied by origin paperwork to confirm plantation source.",
             },
             {
               t: "CAFTA-DR Certificate of Origin",
-              b: "Qualifies the shipment under the Central America Free Trade Agreement for 0% import duty (HTS 4407.29 teak / 4407.10 cypress).",
+              b: "Qualifies the shipment under the Central America Free Trade Agreement for 0% import duty (HTS 4407.29 teak / 4407.10 Central American Cypress).",
             },
             {
               t: "Commercial Invoice & Packing List",
@@ -100,7 +100,7 @@ export default function SourcingPage() {
             { t: "Ocean freight · Caldera / Limón → Houston", b: "8–12 day ocean transit on major carriers. Direct from Costa Rica port to Houston." },
             { t: "Customs & clearance · Port of Houston", b: "Broker files entry under HTS 4407 at 0% duty. THC, inspection, phyto release." },
             { t: "Inland freight · Houston → Iowa", b: "Truck or rail-plus-drayage from Houston to our Des Moines-area staging yard." },
-            { t: "Yard stage · Indianola, IA", b: "Unloaded, staged by species and grade. Available for pickup or regional delivery." },
+            { t: "Yard stage · Waukee, IA", b: "Unloaded, staged by species and grade. Available for pickup or regional delivery." },
           ].map((s, i) => (
             <Reveal key={i} delay={i * 0.04}>
               <li className="flex gap-6 items-start border-b border-white/10 pb-6">

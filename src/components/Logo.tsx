@@ -3,7 +3,7 @@ type LogoProps = {
 };
 
 /**
- * Between Coasts Supply Co. wordmark.
+ * Between Coasts Teak & Timber Co. wordmark.
  * Two horizontal rules = two coasts. The amber plank between them = the middle.
  */
 export default function Logo({ className }: LogoProps) {
@@ -13,7 +13,7 @@ export default function Logo({ className }: LogoProps) {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       role="img"
-      aria-label="Between Coasts Supply Co."
+      aria-label="Between Coasts Teak & Timber Co."
     >
       <defs>
         <linearGradient id="plank" x1="0" y1="0" x2="1" y2="0">

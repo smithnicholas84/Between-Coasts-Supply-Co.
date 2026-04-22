@@ -6,7 +6,7 @@ import CTA from "@/components/CTA";
 export const metadata: Metadata = {
   title: "About — Built between the coasts",
   description:
-    "Between Coasts Supply Co. is an Iowa-based wholesale hardwood import business, bringing premium plantation teak and cypress directly to Midwest builders.",
+    "Between Coasts Teak & Timber Co. is an Iowa-based wholesale hardwood import business, bringing plantation teak and Central American Cypress directly to Midwest builders.",
 };
 
 export default function AboutPage() {
@@ -21,10 +21,10 @@ export default function AboutPage() {
             <span className="italic text-[var(--color-amber)]">On purpose.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-[var(--color-bone-2)] max-w-3xl text-pretty leading-relaxed">
-            Between Coasts Supply Co. is a wholesale hardwood import business
-            based in Indianola, Iowa. We exist because the builders, landscapers,
+            Between Coasts Teak & Timber Co. is a wholesale hardwood import business
+            based in Waukee, Iowa. We exist because the builders, landscapers,
             and contractors shaping the American middle deserve the same access
-            to premium tropical hardwoods that the coasts have had for fifty years —
+            to the tropical hardwoods the coasts have had for fifty years —
             without the coastal markup.
           </p>
           <div className="divider-amber mt-14" />
@@ -43,7 +43,7 @@ export default function AboutPage() {
           <>
             Pressure-treated pine warps. Composite dies on the second hot summer.
             Cedar runs short every season. Meanwhile, two species grown on
-            responsibly-managed plantations 2,200 miles south — teak and cypress —
+            responsibly-managed plantations 2,200 miles south — teak and Central American Cypress —
             outperform everything in the big-box aisle and enter the U.S. at
             zero tariff.
             <br /><br />
@@ -93,7 +93,7 @@ export default function AboutPage() {
             <div className="card p-8">
               <h3 className="font-serif text-3xl">Nick Smith</h3>
               <p className="mt-1 font-mono text-[11px] tracking-[0.22em] uppercase text-[var(--color-amber)]">
-                Founder · Indianola, Iowa
+                Founder · Waukee, Iowa
               </p>
               <p className="mt-5 text-[var(--color-bone-2)] text-pretty leading-relaxed">
                 A decade in home-efficiency sales across Iowa and the central

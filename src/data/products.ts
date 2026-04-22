@@ -30,6 +30,12 @@ export type Product = {
   fabricatedBF: number;
   landedBF: number;
   grossMargin: string;
+  /** Short credibility tags shown above the fold on the product page */
+  chips: string[];
+  /** Human-readable lead time (e.g. "3–5 weeks from Costa Rica") */
+  leadTime: string;
+  /** Human-readable minimum order or pricing-tier note */
+  minOrder: string;
   strengths: string[];
   applications: string[];
   grades: { name: string; description: string }[];
@@ -51,6 +57,14 @@ export const PRODUCTS: Record<"teak" | "cypress", Product> = {
     fabricatedBF: 14.25,
     landedBF: 5.73,
     grossMargin: "~40%",
+    chips: [
+      "CAFTA-DR · 0% duty",
+      "50-year outdoor life",
+      "Zero chemical treatment",
+      "Direct from Costa Rica",
+    ],
+    leadTime: "3–5 weeks from Costa Rica · stock items ship in 1–2 weeks",
+    minOrder: "Bundle ~250 BF · pallet ~1,000 BF",
     strengths: [
       "Tectoquinone compound + natural oil matrix: a built-in moisture barrier that requires zero chemical treatment in any climate",
       "Shrinkage coefficients of 2.5% radial / 4.0% tangential — among the lowest of any commercial hardwood. No gapping, no warping, no seasonal movement",
@@ -184,11 +198,19 @@ export const PRODUCTS: Record<"teak" | "cypress", Product> = {
     name: "Central American Cypress",
     tagline: "Cypressine oil. Cedar-like aroma. Built for the closet — not the chemical shelf.",
     blurb:
-      "Kiln-dried Cupressus lusitanica — the ciprés of Costa Rica's highlands, grown at 1,500–2,500m elevation where cool nights produce dense, aromatic timber. Natural cypressine oils provide fungal resistance and the scent that makes a cypress closet an upgrade over cedar. Above-grade decay resistance for exterior use. Lighter, softer, and faster to install than teak, at roughly half the landed cost.",
+      "Kiln-dried Cupressus lusitanica — the ciprés of Costa Rica's highlands, grown at 1,500–2,500m elevation where cool nights produce dense, aromatic timber. Natural cypressine oils provide fungal resistance and the scent that makes a Central American Cypress closet an upgrade over cedar. Above-grade decay resistance for exterior use. Lighter, softer, and faster to install than teak, at roughly half the landed cost.",
     wholesaleBF: 4.75,
     fabricatedBF: 7.75,
     landedBF: 3.22,
     grossMargin: "~32%",
+    chips: [
+      "CAFTA-DR · 0% duty",
+      "Cypressine fungal resistance",
+      "Moth-repellent 5–10 yr",
+      "Direct from Costa Rica",
+    ],
+    leadTime: "3–5 weeks from Costa Rica · stock items ship in 1–2 weeks",
+    minOrder: "Bundle ~250 BF · pallet ~1,000 BF",
     strengths: [
       "Cypressine (sesquiterpene oil) acts as a natural fungal preservative — above-grade decay resistance without chemical treatment",
       "Alpha-pinene and cedrol create the cedar-like aromatic profile that repels moths and lasts 5–10 years in closet applications",
@@ -209,7 +231,7 @@ export const PRODUCTS: Record<"teak" | "cypress", Product> = {
       {
         name: "Select",
         description:
-          "Clear cypress with uniform honey-to-amber color. Minimal character marks. Best for exposed interior cladding, closet panels, and anywhere a clean, consistent surface is specified.",
+          "Clear Central American Cypress with uniform honey-to-amber color. Minimal character marks. Best for exposed interior cladding, closet panels, and anywhere a clean, consistent surface is specified.",
       },
       {
         name: "#1 Common",
@@ -237,7 +259,7 @@ export const PRODUCTS: Record<"teak" | "cypress", Product> = {
     // ── HERO IMAGE ────────────────────────────────────────────────────────────
     heroImage: {
       url: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=1920&q=90",
-      alt: "Warm cypress wood closet panels in a modern interior",
+      alt: "Warm Central American Cypress closet panels in a modern interior",
       visualBrief:
         "REPLACE: Interior shot of a closet or wardrobe lined with cypress panels. Warm honey-to-amber tones. Soft natural light. Shows the smooth, consistent grain texture of Select grade cypress. Clean, modern but warm aesthetic.",
     },
@@ -246,19 +268,19 @@ export const PRODUCTS: Record<"teak" | "cypress", Product> = {
     galleryImages: [
       {
         url: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=85",
-        alt: "Cypress horizontal fence panels in a residential yard",
+        alt: "Central American Cypress horizontal fence panels in a residential yard",
         visualBrief:
           "REPLACE: Horizontal cypress fence boards installed in a residential backyard. Natural wood color — not stained. Clean lines, consistent board spacing. No people.",
       },
       {
         url: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
-        alt: "Cypress shiplap accent wall in a modern interior",
+        alt: "Central American Cypress shiplap accent wall in a modern interior",
         visualBrief:
           "REPLACE: Interior shiplap wall in cypress showing the warm grain and clean joints. Natural or warm artificial light. Modern space — no rustic props.",
       },
       {
         url: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3?auto=format&fit=crop&w=1200&q=85",
-        alt: "Cypress pergola framing in a residential backyard",
+        alt: "Central American Cypress pergola framing in a residential backyard",
         visualBrief:
           "REPLACE: Cypress pergola or trellis structure in a backyard setting. Shows the structural use of cypress framing stock. Warm light, natural wood color.",
       },

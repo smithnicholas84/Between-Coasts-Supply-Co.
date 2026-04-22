@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
-  title: "Plantation Teak — Chemistry, Performance & Grades | Between Coasts Supply Co.",
+  title: "Plantation Teak — Chemistry, Performance & Grades | Between Coasts Teak & Timber Co.",
   description:
     "Everything about Tectona grandis plantation teak: Tectoquinone chemistry, natural oil matrix, silica content, Janka hardness, grade specs, and why it outlasts cedar by decades without treatment.",
 };

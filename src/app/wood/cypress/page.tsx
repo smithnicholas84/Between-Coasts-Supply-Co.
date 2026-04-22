@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
-  title: "Central American Cypress — Chemistry, Aroma & Grades | Between Coasts Supply Co.",
+  title: "Central American Cypress — Chemistry, Aroma & Grades | Between Coasts Teak & Timber Co.",
   description:
     "Everything about Cupressus lusitanica from Costa Rica: cypressine chemistry, alpha-pinene aromatic profile, species identification, grade specs, and applications for closets, fencing, and exterior cladding.",
 };
@@ -21,7 +21,7 @@ const CHEMISTRY = [
     compound: "Alpha-Pinene",
     type: "Monoterpene · 25–40% of oil fraction",
     headline: "The aromatic compound that repels moths.",
-    body: "Alpha-pinene is the dominant monoterpene in Cupressus lusitanica essential oil, comprising 25–40% of the volatile fraction. It is the same compound responsible for the characteristic piney-cedar aroma and the moth-repellent properties that make cypress closets effective. In a sealed closet environment, alpha-pinene maintains effective concentration for 5–10 years — significantly longer than aromatic red cedar (cedrol-dominant, 3–5 years) before the surface oils exhaust.",
+    body: "Alpha-pinene is the dominant monoterpene in Cupressus lusitanica essential oil, comprising 25–40% of the volatile fraction. It is the same compound responsible for the characteristic piney-cedar aroma and the moth-repellent properties that make Central American Cypress closets effective. In a sealed closet environment, alpha-pinene maintains effective concentration for 5–10 years — significantly longer than aromatic red cedar (cedrol-dominant, 3–5 years) before the surface oils exhaust.",
   },
   {
     compound: "Cedrol + Limonene",
@@ -79,7 +79,7 @@ const GRADES = [
     name: "Select",
     badge: "Interior / Architectural",
     description:
-      "Clear or near-clear cypress with uniform honey-to-amber color. Occasional tight pin knots permitted. No loose knots. Best for exposed interior cladding, closet panels, shiplap feature walls, and anywhere a clean, consistent surface is specified.",
+      "Clear or near-clear Central American Cypress with uniform honey-to-amber color. Occasional tight pin knots permitted. No loose knots. Best for exposed interior cladding, closet panels, shiplap feature walls, and anywhere a clean, consistent surface is specified.",
     applications: ["Closet & wardrobe paneling", "Interior shiplap", "Architectural siding", "Soffit & fascia"],
   },
   {
@@ -208,7 +208,7 @@ export default function CypressPage() {
       </section>
 
       {/* Application Guide */}
-      <Section eyebrow="Application Guide" title="Where cypress excels. Where it doesn't.">
+      <Section eyebrow="Application Guide" title="Where Central American Cypress excels. Where it doesn't.">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
           <div>
             <h4 className="font-mono text-[11px] tracking-[0.2em] uppercase text-[var(--color-amber)] mb-5">
@@ -221,7 +221,7 @@ export default function CypressPage() {
               },
               {
                 t: "Horizontal privacy fencing",
-                b: "Above-grade decay resistance with zero chemical treatment. Cypress fence boards perform comparably to cedar at similar pricing — with better hardness and smoother finish.",
+                b: "Above-grade decay resistance with zero chemical treatment. Central American Cypress fence boards perform comparably to cedar at similar pricing — with better hardness and smoother finish.",
               },
               {
                 t: "Pergola & trellis framing",
@@ -233,7 +233,7 @@ export default function CypressPage() {
               },
               {
                 t: "Exterior siding & rainscreen",
-                b: "With correct back-priming and drainable details, cypress is appropriate for vertical siding and rainscreen applications in Midwest climate zones.",
+                b: "With correct back-priming and drainable details, Central American Cypress is appropriate for vertical siding and rainscreen applications in Midwest climate zones.",
               },
             ].map((item) => (
               <div key={item.t} className="mb-5 border-l-2 border-[var(--color-amber)]/40 pl-5">
@@ -249,7 +249,7 @@ export default function CypressPage() {
             {[
               {
                 t: "Ground contact",
-                b: "Cypress is rated above-grade. For ground contact or in-ground posts, specify pressure-treated pine (UC4A/UC4B) or teak. Cypress in ground contact will fail within 5–10 years.",
+                b: "Central American Cypress is rated above-grade. For ground contact or in-ground posts, specify pressure-treated pine (UC4A/UC4B) or teak. In ground contact it will fail within 5–10 years.",
               },
               {
                 t: "Marine / below-waterline",
@@ -257,7 +257,7 @@ export default function CypressPage() {
               },
               {
                 t: "Structural framing (interior load-bearing)",
-                b: "Cypress framing stock is appropriate for landscape structures and pergolas. It is not engineered or code-approved as interior structural framing — use dimensional SPF or LVL.",
+                b: "Central American Cypress framing stock is appropriate for landscape structures and pergolas. It is not engineered or code-approved as interior structural framing — use dimensional SPF or LVL.",
               },
             ].map((item) => (
               <div key={item.t} className="mb-5 border-l-2 border-white/15 pl-5">
@@ -289,14 +289,14 @@ export default function CypressPage() {
           <p className="text-[var(--color-bone-2)] leading-relaxed text-pretty mb-5">
             Cupressus lusitanica — introduced to Costa Rica from Mexico in the colonial period — has
             naturalized into Costa Rica's volcanic highland ecology and is now grown as a managed plantation
-            species under SINAC (Sistema Nacional de Áreas de Conservación) oversight. Our cypress comes from
+            species under SINAC (Sistema Nacional de Áreas de Conservación) oversight. Our Central American Cypress comes from
             plantations at 1,500–2,500m elevation in the central highlands, where cool nights and altitude
             produce denser wood and higher aromatic oil content than lowland-grown material.
           </p>
           <p className="text-[var(--color-bone-2)] leading-relaxed text-pretty mb-5">
             Costa Rica achieved net-zero deforestation status — the first tropical nation to do so. All
             plantation timber operates under a framework that requires replanting at minimum 1:1 ratios. Our
-            cypress documentation includes plantation origin, SINAC management records, and phytosanitary
+            Central American Cypress documentation includes plantation origin, SINAC management records, and phytosanitary
             certification at export. We can provide the paperwork for any order.
           </p>
           <p className="text-[var(--color-bone-2)] leading-relaxed text-pretty">
@@ -363,7 +363,7 @@ export default function CypressPage() {
       </section>
 
       {/* CTAs */}
-      <Section eyebrow="Next Step" title="Ready to specify cypress?">
+      <Section eyebrow="Next Step" title="Ready to specify Central American Cypress?">
         <div className="flex flex-wrap gap-4">
           <Link href="/products/cypress" className="btn-primary">
             View pricing &amp; grades

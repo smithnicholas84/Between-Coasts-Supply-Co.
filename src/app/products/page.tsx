@@ -7,9 +7,9 @@ import CTA from "@/components/CTA";
 import { PRODUCTS } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Products — Teak & Cypress",
+  title: "Products — Teak & Central American Cypress",
   description:
-    "Kiln-dried plantation teak and Central American cypress, direct from Costa Rica. Wholesale pricing, raw and fabricated profiles.",
+    "Kiln-dried plantation teak and Central American Cypress, direct from Costa Rica. Wholesale pricing, raw and fabricated profiles.",
 };
 
 export default function ProductsPage() {

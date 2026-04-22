@@ -1,4 +1,4 @@
-# Between Coasts Supply Co. — Web
+# Between Coasts Teak & Timber Co. — Web
 
 Next.js 16 · React 19 · Tailwind v4 · Framer Motion
 Brand: Harvest amber `#C4852A` on midnight `#0F0D0A`.

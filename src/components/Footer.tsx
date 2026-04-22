@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="md:col-span-5">
             <Logo className="h-8 w-auto text-[var(--color-amber)]" />
             <p className="mt-6 text-[var(--color-fog)] max-w-sm text-pretty">
-              Premium kiln-dried teak and cypress, imported direct from Costa Rica.
+              Kiln-dried plantation teak and Central American Cypress, imported direct from Costa Rica under CAFTA-DR 0% duty.
               Wholesale supply for builders, landscapers, and contractors from
               the Rockies to the Great Lakes.
             </p>
@@ -25,7 +25,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-[var(--color-fog)]">
               <li><Link href="/products/teak" className="hover:text-[var(--color-amber)]">Teak</Link></li>
-              <li><Link href="/products/cypress" className="hover:text-[var(--color-amber)]">Cypress</Link></li>
+              <li><Link href="/products/cypress" className="hover:text-[var(--color-amber)]">Central American Cypress</Link></li>
               <li><Link href="/applications" className="hover:text-[var(--color-amber)]">Applications</Link></li>
               <li><Link href="/sourcing" className="hover:text-[var(--color-amber)]">Sourcing</Link></li>
             </ul>
@@ -57,7 +57,8 @@ export default function Footer() {
                   (515) 555-0199
                 </a>
               </li>
-              <li className="pt-1">Indianola, Iowa<br />Serving IA · NE · KS · MN · MO · WI · CO</li>
+              <li className="pt-1">Waukee, Iowa<br />Serving IA · NE · KS · MN · MO · WI · CO</li>
+              <li className="pt-1">Mon–Fri · 7:30am–5:00pm CT</li>
             </ul>
           </div>
         </div>
@@ -66,10 +67,10 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-[var(--color-fog)]">
-            © {year} Between Coasts Supply Co. · All rights reserved.
+            © {year} Between Coasts Teak & Timber Co. · All rights reserved.
           </p>
           <p className="font-mono text-[10px] tracking-[0.22em] uppercase text-[var(--color-fog)]">
-            FSC-track sourcing · CAFTA-DR compliant · Phyto-certified imports
+            EIN XX-XXXXXXX · FSC-track sourcing · CAFTA-DR compliant · Phyto-certified imports
           </p>
         </div>
       </div>

@@ -9,6 +9,11 @@ import Link from "next/link";
  * Layers: deep midnight wash → amber radial light → horizontal plank strata
  * (wood grain SVG, scrolls at different rates) → grain + ember particles → copy.
  */
+
+// Illustration-only wood-grain midtones. Not brand tokens — they only exist
+// inside the decorative SVG gradient here. Brand colors come from CSS vars.
+const WOOD_GRAIN_MID = "#2A1E11";
+const WOOD_GRAIN_WARM = "#5A3A1C";
 export default function ParallaxHero() {
   const ref = useRef<HTMLDivElement>(null);
   const reduce = useReducedMotion();
@@ -82,16 +87,16 @@ export default function ParallaxHero() {
       >
         <div className="max-w-4xl fade-up">
           <p className="eyebrow mb-6">
-            Teak · Cypress · Wholesale · Midwest Direct
+            Teak · Central American Cypress · Wholesale · Midwest Direct
           </p>
           <h1 className="font-serif text-[clamp(2.5rem,7vw,6rem)] leading-[1.02] tracking-[-0.02em] text-balance">
-            Premium hardwood.
+            Plantation hardwood from Costa Rica.
             <br />
             <span className="italic text-[var(--color-amber)]">Priced for the job site.</span>
           </h1>
           <p className="mt-8 text-lg md:text-xl text-[var(--color-bone-2)] max-w-2xl text-pretty leading-relaxed">
-            Kiln-dried plantation teak and cypress, imported direct from Costa
-            Rica and landed in Iowa at 0% duty. Wholesale pricing for fence
+            Kiln-dried plantation teak and Central American Cypress, imported
+            direct from Costa Rica and landed in Iowa at 0% duty. Wholesale pricing for fence
             installers, landscapers, and contractors across the Midwest.
             No retail markup. No middle man.
           </p>
@@ -135,16 +140,16 @@ function PlankStrata({ variant }: { variant: "far" | "mid" | "near" }) {
     >
       <defs>
         <linearGradient id={`wood-${variant}`} x1="0" x2="1" y1="0" y2="0">
-          <stop offset="0" stopColor="#0F0D0A" />
-          <stop offset="0.12" stopColor="#2A1E11" />
-          <stop offset="0.45" stopColor="#5A3A1C" />
-          <stop offset="0.72" stopColor="#2A1E11" />
-          <stop offset="1" stopColor="#0F0D0A" />
+          <stop offset="0" style={{ stopColor: "var(--color-midnight)" }} />
+          <stop offset="0.12" stopColor={WOOD_GRAIN_MID} />
+          <stop offset="0.45" stopColor={WOOD_GRAIN_WARM} />
+          <stop offset="0.72" stopColor={WOOD_GRAIN_MID} />
+          <stop offset="1" style={{ stopColor: "var(--color-midnight)" }} />
         </linearGradient>
         <linearGradient id={`wood-edge-${variant}`} x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0" stopColor="#C4852A" stopOpacity="0.35" />
-          <stop offset="0.5" stopColor="#C4852A" stopOpacity="0" />
-          <stop offset="1" stopColor="#0F0D0A" stopOpacity="0.6" />
+          <stop offset="0" style={{ stopColor: "var(--color-amber)", stopOpacity: 0.35 }} />
+          <stop offset="0.5" style={{ stopColor: "var(--color-amber)", stopOpacity: 0 }} />
+          <stop offset="1" style={{ stopColor: "var(--color-midnight)", stopOpacity: 0.6 }} />
         </linearGradient>
         <filter id={`grain-${variant}`}>
           <feTurbulence baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" />
@@ -162,7 +167,7 @@ function PlankStrata({ variant }: { variant: "far" | "mid" | "near" }) {
             <rect x="0" y={y} width="1920" height={height - 4} filter={`url(#grain-${variant})`} opacity="0.6" />
             {/* seam */}
             <line x1="0" y1={y + height - 4} x2="1920" y2={y + height - 4} stroke="#000" strokeWidth="1.2" opacity="0.75" />
-            <line x1="0" y1={y + height - 3.5} x2="1920" y2={y + height - 3.5} stroke="#C4852A" strokeWidth="0.4" opacity="0.2" />
+            <line x1="0" y1={y + height - 3.5} x2="1920" y2={y + height - 3.5} style={{ stroke: "var(--color-amber)" }} strokeWidth="0.4" opacity="0.2" />
           </g>
         );
       })}

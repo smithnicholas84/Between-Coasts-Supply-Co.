@@ -6,7 +6,7 @@ import CTA from "@/components/CTA";
 export const metadata: Metadata = {
   title: "Trade Program",
   description:
-    "Wholesale pricing, Net-30 terms, volume tiers, and yard pickup for qualified trade accounts. Between Coasts Supply Co. trade program for contractors, landscapers, architects, and millwork shops.",
+    "Wholesale pricing, Net-30 terms, volume tiers, and yard pickup for qualified trade accounts. Between Coasts Teak & Timber Co. trade program for contractors, landscapers, architects, and millwork shops.",
 };
 
 export default function TradePage() {

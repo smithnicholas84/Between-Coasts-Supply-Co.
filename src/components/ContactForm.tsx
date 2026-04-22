@@ -92,7 +92,7 @@ export default function ContactForm() {
           required
           options={[
             "Teak",
-            "Cypress",
+            "Central American Cypress",
             "Both",
             "Not sure — help me spec",
           ]}

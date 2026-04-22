@@ -3,8 +3,58 @@ import Link from "next/link";
 import Section from "@/components/Section";
 import Reveal from "@/components/Reveal";
 import CTA from "@/components/CTA";
+import ChipStrip from "@/components/ChipStrip";
 import type { Product } from "@/data/products";
 import { APPLICATIONS } from "@/data/applications";
+
+const SITE_URL = "https://betweencoastssupply.com";
+
+function buildProductJsonLd(product: Product) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${SITE_URL}/products/${product.slug}#product`,
+    name: product.name,
+    description: product.blurb,
+    sku: product.slug,
+    url: `${SITE_URL}/products/${product.slug}`,
+    image: [product.heroImage.url, ...product.galleryImages.map((g) => g.url)],
+    category: "Wholesale lumber",
+    brand: {
+      "@type": "Brand",
+      name: "Between Coasts Teak & Timber Co.",
+    },
+    manufacturer: {
+      "@type": "Organization",
+      name: "Between Coasts Teak & Timber Co.",
+      url: SITE_URL,
+    },
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "USD",
+      lowPrice: product.wholesaleBF.toFixed(2),
+      highPrice: product.fabricatedBF.toFixed(2),
+      offerCount: 2,
+      availability: "https://schema.org/InStock",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        priceCurrency: "USD",
+        unitCode: "BFT",
+        unitText: "board foot",
+      },
+      seller: {
+        "@type": "Organization",
+        name: "Between Coasts Teak & Timber Co.",
+        url: SITE_URL,
+      },
+    },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Import duty", value: "0% under CAFTA-DR (HTS 4407)" },
+      { "@type": "PropertyValue", name: "Lead time", value: product.leadTime },
+      { "@type": "PropertyValue", name: "Minimum order", value: product.minOrder },
+    ],
+  };
+}
 
 export default function ProductPage({ product }: { product: Product }) {
   const relatedApps = APPLICATIONS.filter((a) =>
@@ -13,10 +63,16 @@ export default function ProductPage({ product }: { product: Product }) {
 
   const speciesLabel = product.slug === "teak" ? "Species 01 · Premium" : "Species 02 · Volume";
 
+  const productJsonLd = buildProductJsonLd(product);
+
   return (
     <>
-      {/* ─── HERO — title + full-bleed product image ─────────────────────── */}
-      <section className="relative pt-32 md:pt-40 pb-0 overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      {/* ─── HERO — above-fold: title, chips, price band, dual CTAs ─────── */}
+      <section className="relative pt-28 md:pt-36 pb-0 overflow-hidden">
         <div className="absolute inset-0 gradient-radial-amber opacity-40 pointer-events-none" />
         <div className="container-x relative">
           <Link
@@ -25,17 +81,45 @@ export default function ProductPage({ product }: { product: Product }) {
           >
             ← All Products
           </Link>
-          <p className="eyebrow mt-5 mb-5">{speciesLabel}</p>
-          <h1 className="font-serif text-[clamp(2.5rem,7vw,6rem)] leading-[1.02] tracking-[-0.02em] text-balance">
+          <p className="eyebrow mt-4 mb-4">{speciesLabel}</p>
+          <h1 className="font-serif text-[clamp(2rem,6.5vw,5.5rem)] leading-[1.02] tracking-[-0.02em] text-balance">
             {product.name}
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-[var(--color-bone-2)] max-w-3xl text-pretty leading-relaxed">
+          <p className="mt-4 text-base md:text-xl text-[var(--color-bone-2)] max-w-3xl text-pretty leading-relaxed">
             {product.tagline}
           </p>
+
+          {/* Chip strip — credibility tags */}
+          <div className="mt-5">
+            <ChipStrip chips={product.chips} />
+          </div>
+
+          {/* Price band + dual CTAs — the conversion row */}
+          <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 pt-5 border-t border-white/10">
+            <div>
+              <p className="font-serif text-2xl md:text-3xl text-[var(--color-bone)]">
+                ${product.wholesaleBF.toFixed(2)}
+                <span className="text-[var(--color-fog)]">–</span>
+                ${product.fabricatedBF.toFixed(2)}
+                <span className="text-sm font-sans text-[var(--color-fog)] ml-2">/ BF wholesale</span>
+              </p>
+              <p className="mt-1 font-mono text-[10px] tracking-[0.2em] uppercase text-[var(--color-fog)]">
+                {product.leadTime}
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Link href="/contact?intent=quote" className="btn-primary">
+                Request quote
+              </Link>
+              <Link href="/contact?intent=sample" className="btn-ghost">
+                Request sample
+              </Link>
+            </div>
+          </div>
         </div>
 
-        {/* Full-bleed hero image */}
-        <div className="mt-12 relative w-full h-[55vh] min-h-[380px] max-h-[600px] overflow-hidden">
+        {/* Full-bleed hero image — below the above-fold conversion row */}
+        <div className="mt-10 md:mt-14 relative w-full h-[50vh] min-h-[340px] max-h-[560px] overflow-hidden">
           <Image
             src={product.heroImage.url}
             alt={product.heroImage.alt}
@@ -53,7 +137,7 @@ export default function ProductPage({ product }: { product: Product }) {
           />
         </div>
 
-        <div className="container-x relative mt-10">
+        <div className="container-x relative mt-8 md:mt-10">
           <div className="divider-amber" />
         </div>
       </section>
