@@ -37,7 +37,7 @@ export default function Nav() {
     >
       <div className="container-x flex items-center justify-between h-16 md:h-20">
         <Link href="/" aria-label="Between Coasts Teak & Timber Co." className="flex items-center gap-3 group">
-          <Logo className="h-7 w-auto text-[var(--color-amber)] group-hover:text-[var(--color-amber-2)] transition-colors" />
+          <Logo className="h-10 w-10 group-hover:opacity-90 transition-opacity" />
           <span className="hidden md:inline font-mono text-[10px] tracking-[0.22em] uppercase text-[var(--color-fog)] group-hover:text-[var(--color-bone)] transition-colors">
             Between Coasts Teak & Timber Co.
           </span>

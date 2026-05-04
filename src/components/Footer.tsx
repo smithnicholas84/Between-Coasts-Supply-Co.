@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container-x py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-5">
-            <Logo className="h-8 w-auto text-[var(--color-amber)]" />
+            <Logo className="h-16 w-16" />
             <p className="mt-6 text-[var(--color-fog)] max-w-sm text-pretty">
               Kiln-dried plantation teak and Central American Cypress, imported direct from Costa Rica under CAFTA-DR 0% duty.
               Wholesale supply for builders, landscapers, and contractors from
